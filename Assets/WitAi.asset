@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: WitAi
+  m_EditorClassIdentifier: 
+  application:
+    witConfiguration: {fileID: 11400000}
+    name: aiavatar
+    id: 2082854371873116
+    lang: de
+    isPrivate: 0
+    createdAt: 2022-06-03T05:31:51-0700
+  configId: d061bada66e01e24eae8c86b15a132ba
+  clientAccessToken: BJLFP7VUYXGV3BCUY5KBXASGB36Q4JAL
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 801023400879816
+    name: FriendlyGreeting
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 591864658974847
+      name: FriendlyGreeting
+    keywords:
+    - keyword: Abend
+      synonyms:
+      - abend
+    - keyword: Alola
+      synonyms:
+      - alola
+    - keyword: Guten Tag
+      synonyms:
+      - guten tag
+    - keyword: Hallo
+      synonyms:
+      - hallo
+    - keyword: Hello
+      synonyms:
+      - hello
+    - keyword: Hi
+      synonyms:
+      - hi
+    - keyword: Hola
+      synonyms:
+      - hola
+    - keyword: Moin
+      synonyms:
+      - moin
+    - keyword: Morgen
+      synonyms:
+      - morgen
+    - keyword: Nachmittag
+      synonyms:
+      - nachmittag
+    - keyword: "Sch\xF6nen Tag"
+      synonyms:
+      - "sch\xF6nen tag"
+  - witConfiguration: {fileID: 11400000}
+    id: 1188312051933514
+    name: PlayIntro
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 1150518255741210
+      name: PlayIntro
+    keywords:
+    - keyword: Wie funktioniert das
+      synonyms:
+      - wie funktioniert das
+  - witConfiguration: {fileID: 11400000}
+    id: 558598272540871
+    name: Stop
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 7776453625728480
+      name: Stop
+    keywords:
+    - keyword: "H\xF6ren wir auf"
+      synonyms:
+      - "h\xF6ren wir auf"
+  - witConfiguration: {fileID: 11400000}
+    id: 1114932392390888
+    name: ThinkLetStart
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 683357946076138
+      name: ThinkLetStart
+    keywords:
+    - keyword: Anfangen
+      synonyms:
+      - Anfangen
+    - keyword: Fangen wir an
+      synonyms:
+      - fangen wir an
+    - keyword: Legen wir los
+      synonyms:
+      - Legen wir los
+    - keyword: Los gehts
+      synonyms:
+      - los gehts
+    - keyword: Starten
+      synonyms:
+      - starten
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 1910902632442454
+    name: Greeting
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 591864658974847
+      name: FriendlyGreeting:FriendlyGreeting
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 683357946076138
+      name: ThinkLetStart:ThinkLetStart
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 750787159278773
+    name: Introduction
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 1150518255741210
+      name: PlayIntro:PlayIntro
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 728407418350304
+    name: StartOnePage
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 683357946076138
+      name: ThinkLetStart:ThinkLetStart
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1424284734677613
+    name: StopCollecting
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 7776453625728480
+      name: Stop:Stop
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 439591097992937
+    name: Thanks
+    entities: []
+  traits:
+  - witConfiguration: {fileID: 11400000}
+    id: 545960367204638
+    name: Joy
+    values: []
+  isDemoOnly: 0
